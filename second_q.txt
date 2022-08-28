@@ -1,0 +1,11 @@
+SELECT result, User.name, Subject.name AS subject FROM Result 
+JOIN Users ON Result.user_id=User.id 
+JOIN Subject ON Result.subject=Subject.id 
+ORDER BY result DESC 
+LIMIT 3;
+
+SELECT User.name, SUM(result.result) FROM User 
+JOIN Result ON Result.user_id=User.id 
+JOIN Subject ON Result.subject=Subject.id 
+GROUP BY User.name 
+HAVING COUNT(User.name)=3;
