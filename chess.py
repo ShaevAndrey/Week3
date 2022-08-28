@@ -1,9 +1,3 @@
-
-
-
-from typing import Tuple
-
-
 class Figure():
     line = 0
     row = 0
