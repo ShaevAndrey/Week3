@@ -8,7 +8,6 @@ class Map:
         ]
     """
     
-    
     def __init__(self, map_image) -> None:
         self.__map_image=map_image
         self.__road_signs=list()
